@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Small Business v5.0.4 (https://startbootstrap.com/template/small-business)
-* Copyright 2013-2021 Start Bootstrap
+* Copyright 2013-2022 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-small-business/blob/master/LICENSE)
 */
 /*!
@@ -10,6 +10,15 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ html {
+  scroll-behavior: smooth;
+}
+.picture{
+  height: 300px;
+  width: 300px;
+  margin-left: 100px;
+  border: 2px solid black;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -4516,7 +4525,7 @@ textarea.form-control-lg {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 0.25rem;x
 }
 .card > hr {
   margin-right: 0;
@@ -4544,10 +4553,17 @@ textarea.form-control-lg {
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
+  font-size: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-stretch: expanded;
+  font-variant: small-caps;
 }
 
 .card-title {
   margin-bottom: 0.5rem;
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin-top: 20px
 }
 
 .card-subtitle {
@@ -4559,6 +4575,30 @@ textarea.form-control-lg {
   margin-bottom: 0;
 }
 
+.card-text{
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.card-text-title{
+  text-align: center;
+  line-height: 1;
+  font-size: large;
+  display: flex;
+  align-content: flex-end;
+  justify-content: center;
+  font-size: 30px;
+  margin-top: 30px;
+
+}
+
+.card-companies{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  
+}
 .card-link + .card-link {
   margin-left: 1rem;
 }
@@ -7761,7 +7801,11 @@ textarea.form-control-lg {
 
 .text-white {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  color: seashell;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-stretch: expanded;
+  font-variant: small-caps;
+
 }
 
 .text-body {
@@ -7812,7 +7856,8 @@ textarea.form-control-lg {
 
 .bg-secondary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #8c1c73;
+
 }
 
 .bg-success {
